@@ -1,24 +1,27 @@
--- Basic SQL practice queries
+-- SQL Practice Queries
+-- Assumed table: employees
+-- Columns: id, name, department, salary
 
--- 1. Select all columns from a table
-SELECT *
-FROM table_name;
+-- 1. View all employees
+SELECT * 
+FROM employees;
 
--- 2. Select specific columns
-SELECT column1, column2
-FROM table_name;
+-- 2. Select name and department
+SELECT name, department
+FROM employees;
 
--- 3. Filter records using WHERE
-SELECT *
-FROM table_name
-WHERE condition;
+-- 3. Filter employees by department
+SELECT name, department
+FROM employees
+WHERE department = 'Sales';
 
--- 4. Aggregate data using GROUP BY
-SELECT column1, COUNT(*) AS total_count
-FROM table_name
-GROUP BY column1;
+-- 4. Sort employees by salary (highest first)
+SELECT name, salary
+FROM employees
+ORDER BY salary DESC;
 
--- 5. Sort results
-SELECT *
-FROM table_name
-ORDER BY column1 DESC;
+-- 5. Average salary by department
+SELECT department, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department;
+
