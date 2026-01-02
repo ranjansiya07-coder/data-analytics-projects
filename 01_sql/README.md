@@ -1,8 +1,13 @@
-This folder will contain SQL practice and query-based data analysis work.
+## SQL Practice
 
-Topics covered will include:
+This folder contains my SQL learning and practice queries.
+
+Topics covered:
 - Basic SELECT queries
-- Filtering and sorting
-- Aggregations and GROUP BY
-- Joins and subqueries
-- Business-oriented SQL problems
+- WHERE conditions
+- ORDER BY
+- GROUP BY and aggregate functions
+- Basic subqueries
+
+This folder will be updated as I continue learning SQL.
+
